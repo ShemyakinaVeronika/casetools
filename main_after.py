@@ -35,7 +35,7 @@ def quadratic_equation(a, b, c):
     if a == 0:
         return "Это не квадратное уравнение."
 
-    d = b ** 2 - 4 * a * c
+    d = b**2 - 4 * a * c
 
     if d < 0:
         return "Действительных корней нет."
@@ -48,16 +48,17 @@ def quadratic_equation(a, b, c):
 
     return sorted([round(x1, 3), round(x2, 3)])
 
+
 def solve():
     """
-        Обрабатывает нажатие кнопки «Решить».
+    Обрабатывает нажатие кнопки «Решить».
 
-        Получает значения коэффициентов из полей ввода,
-        вызывает функцию вычисления корней и отображает результат
-        в интерфейсе пользователя.
+    Получает значения коэффициентов из полей ввода,
+    вызывает функцию вычисления корней и отображает результат
+    в интерфейсе пользователя.
 
-        В случае ошибки ввода выводит сообщение об ошибке.
-        """
+    В случае ошибки ввода выводит сообщение об ошибке.
+    """
     try:
         a = float(entry_a.get())
         b = float(entry_b.get())
@@ -68,6 +69,7 @@ def solve():
 
     except ValueError:
         messagebox.showerror("Ошибка", "Введите корректные числа!")
+
 
 def clear():
     """
@@ -93,39 +95,41 @@ root.configure(bg="#1e1e2f")
 # Настраиваем стиль виджетов
 style = ttk.Style()
 style.theme_use("clam")
-style.configure("TButton",
-                font=("Arial", 11),
-                padding=6)
-style.configure("TEntry",
-                padding=5)
+style.configure("TButton", font=("Arial", 11), padding=6)
+style.configure("TEntry", padding=5)
 
 # Настраиваем заголовок
-title = tk.Label(root,
-                 text="ax² + bx + c = 0",
-                 font=("Segoe UI", 18, "bold"),
-                 fg="white",
-                 bg="#1e1e2f")
-title.pack(pady=15) # Отступы
+title = tk.Label(
+    root,
+    text="ax² + bx + c = 0",
+    font=("Segoe UI", 18, "bold"),
+    fg="white",
+    bg="#1e1e2f",
+)
+title.pack(pady=15)  # Отступы
 
 # Создаем фрейм - контейнер для группировки виджетов
 frame = tk.Frame(root, bg="#1e1e2f")
 frame.pack(pady=10)
 
 # Создаем поля ввода
-tk.Label(frame, text="a:", font=("Segoe UI", 12),
-         fg="white", bg="#1e1e2f").grid(row=0, column=0, padx=5, pady=5)
+tk.Label(frame, text="a:", font=("Segoe UI", 12), fg="white", bg="#1e1e2f").grid(
+    row=0, column=0, padx=5, pady=5
+)
 
 entry_a = ttk.Entry(frame, width=15)
 entry_a.grid(row=0, column=1)
 
-tk.Label(frame, text="b:", font=("Segoe UI", 12),
-         fg="white", bg="#1e1e2f").grid(row=1, column=0, padx=5, pady=5)
+tk.Label(frame, text="b:", font=("Segoe UI", 12), fg="white", bg="#1e1e2f").grid(
+    row=1, column=0, padx=5, pady=5
+)
 
 entry_b = ttk.Entry(frame, width=15)
 entry_b.grid(row=1, column=1)
 
-tk.Label(frame, text="c:", font=("Segoe UI", 12),
-         fg="white", bg="#1e1e2f").grid(row=2, column=0, padx=5, pady=5)
+tk.Label(frame, text="c:", font=("Segoe UI", 12), fg="white", bg="#1e1e2f").grid(
+    row=2, column=0, padx=5, pady=5
+)
 
 entry_c = ttk.Entry(frame, width=15)
 entry_c.grid(row=2, column=1)
@@ -141,11 +145,9 @@ clear_btn = ttk.Button(btn_frame, text="Очистить", command=clear)
 clear_btn.grid(row=0, column=1, padx=10)
 
 # Создаем метку для вывода результата
-result_label = tk.Label(root,
-                        text="Результат:",
-                        font=("Segoe UI", 12),
-                        fg="#4CAF50",
-                        bg="#1e1e2f")
+result_label = tk.Label(
+    root, text="Результат:", font=("Segoe UI", 12), fg="#4CAF50", bg="#1e1e2f"
+)
 result_label.pack(pady=10)
 
 # Запускаем главный цикл приложения
