@@ -113,23 +113,20 @@ frame = tk.Frame(root, bg="#1e1e2f")
 frame.pack(pady=10)
 
 # Создаем поля ввода
-tk.Label(frame, text="a:", font=("Segoe UI", 12), fg="white", bg="#1e1e2f").grid(
-    row=0, column=0, padx=5, pady=5
-)
+tk.Label(frame, text="a:", font=("Segoe UI", 12), fg="white",
+         bg="#1e1e2f").grid(row=0, column=0, padx=5, pady=5)
 
 entry_a = ttk.Entry(frame, width=15)
 entry_a.grid(row=0, column=1)
 
-tk.Label(frame, text="b:", font=("Segoe UI", 12), fg="white", bg="#1e1e2f").grid(
-    row=1, column=0, padx=5, pady=5
-)
+tk.Label(frame, text="b:", font=("Segoe UI", 12), fg="white",
+         bg="#1e1e2f").grid(row=1, column=0, padx=5, pady=5)
 
 entry_b = ttk.Entry(frame, width=15)
 entry_b.grid(row=1, column=1)
 
-tk.Label(frame, text="c:", font=("Segoe UI", 12), fg="white", bg="#1e1e2f").grid(
-    row=2, column=0, padx=5, pady=5
-)
+tk.Label(frame, text="c:", font=("Segoe UI", 12), fg="white",
+         bg="#1e1e2f").grid(row=2, column=0, padx=5, pady=5)
 
 entry_c = ttk.Entry(frame, width=15)
 entry_c.grid(row=2, column=1)

@@ -48,6 +48,7 @@ def quadratic_equation(a, b, c):
 
     return sorted([round(x1, 3), round(x2, 3)])
 
+
 def solve():
     """
         Обрабатывает нажатие кнопки «Решить».
@@ -68,6 +69,7 @@ def solve():
 
     except ValueError:
         messagebox.showerror("Ошибка", "Введите корректные числа!")
+
 
 def clear():
     """
@@ -105,7 +107,7 @@ title = tk.Label(root,
                  font=("Segoe UI", 18, "bold"),
                  fg="white",
                  bg="#1e1e2f")
-title.pack(pady=15) # Отступы
+title.pack(pady=15)  # Отступы
 
 # Создаем фрейм - контейнер для группировки виджетов
 frame = tk.Frame(root, bg="#1e1e2f")
