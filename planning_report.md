@@ -127,7 +127,7 @@ ax² + bx + c = 0
 
 ## Диаграмма Ганта (промежуточное состояние проекта)
 
-![GanttPRO_2](screenshots/GanttPRO_2.png)
+![](screenshots/GanttPRO_2.png)
 
 *Диаграмма отражает промежуточное состояние проекта, включая завершенные, выполняемые и еще не начатые задачи.*
 
@@ -135,16 +135,16 @@ ax² + bx + c = 0
 
 ## Диаграмма PERT
 
-![GanttPRO_2](screenshots/My%20First%20Board.jpg)
+![](screenshots/MyFirstBoard.png)
 
 *PERT-диаграмма отображает зависимости между задачами проекта и позволяет определить последовательность выполнения работ, а также критический путь проекта.*
 
-![GanttPRO_2](screenshots/pert_1.png)
+![](screenshots/pert_1.png)
 
 *PERT-диаграмма проекта (часть 1)*
 
 
-![GanttPRO_2](screenshots/pert_2.png)
+![](screenshots/pert_2.png)
 
 *PERT-диаграмма проекта (часть 2)*
 
